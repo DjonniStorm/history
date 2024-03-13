@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vh;
+    scroll-behavior: smooth;
+}
+/* глобальные переменные цвета */
+:root {
+    --headerColor: rgba(240, 240, 240, 0.5);
+    --headerUnderline: rgba(45, 45, 45, 0.5);
+    --header2Color: rgba(40, 40, 70, 0.8);
+    --header3Color: rgba(10, 10, 20, 1);
+    --defaultTextColor: rgba(30, 30, 30, 0.7);
+    --borderColor: rgba(50, 50, 50, 0.8);
+    --scroll1: #555;
+    --scroll2: #888;
+}
+/* основные вкладки навигации */
+.docHeader ul {
+    list-style: none;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+div.docHeader {
+    background-color: var(--headerColor);
+    position: sticky;
+    min-height: 6vh;
+    display: flex;
+    justify-content:end;
+    text-align: center;
+    align-items: center;
+}
+ul.header-sections li {
+    display: block;
+    min-width: 50%;
+}
+a {
+    text-decoration: none;
+    color: var(--defaultTextColor);
+}
+.docHeader a {
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 3px #999999;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.docHeader a:hover {
+    border-bottom: 2px solid;
+    border-color: var(--headerUnderline);
+}
+/* меню с реформами */
+div.navbar {
+    background-color: #999999;
+    margin-top: 0%;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 5vh;
+    text-align: center;
+    border: 1px solid rgba(10, 10, 10, 0.1);
+}
+.navbar li {
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: block;
+
+}
+.navbar a {
+    display: block;
+    padding: 10px;
+    color: var(--header2Color);
+}
+.navbar a:hover {
+    background-color: aliceblue;
+    color: var(--header3Color);
+}
+/* Контент/main */
+main {
+    display: flex;
+}
+main h1, h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+main p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+main h2 {
+    font-size: 1.1em;
+    margin-right: 5px;
+}
+main h1 {
+    font-size: 1em;
+}
+div.section {
+    max-width: 30%;
+    max-height: 77vh;
+    border: 2px solid var(--borderColor);
+    flex: 1 1 75%;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    direction: rtl;
+}
+div.content {
+    flex: 1 1 25%;
+}
+.section ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    direction: ltr;
+}
+.section li {
+    display: block;
+    margin-top: 5px;
+}
+.section a:hover {
+    text-decoration: underline;
+    background-color: #BBB;
+    color: #222;
+    font-size: large;
+}
+
+.section::-webkit-scrollbar {
+    background-color: var(--scroll1);
+    min-width: 3px;
+    max-width: 12px;
+}
+.section::-webkit-scrollbar-thumb {
+    background-color: var(--scroll2);
+}
+
+div.content {
+    min-width: 20%;
+    text-indent: 5%;
+    padding: 2%;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+    max-height: 69vh;
+}
+.content::-webkit-scrollbar {
+    background-color: var(--scroll1);
+    min-width: 3px;
+    max-width: 12px;
+}
+.content::-webkit-scrollbar-thumb {
+    background-color: var(--scroll2);
+}
+
+/*подвал*/
+footer div {
+    background-color: #222;
+    margin-bottom: 0;
+    padding: 0;
+    min-height: 8vh;
+}
