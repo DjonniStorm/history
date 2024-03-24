@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --navColor: rgba(148, 148, 148, 1);
+    --navColor2: rgba(228, 228, 228, 1);
+    --navTextColor: rgba(50, 50, 50, 0.9);
+    --navTextColorHover: rgba(15, 15, 15, 0.9);
+    --contentText: rgba(30, 30, 26, 0.8)
+}
+body {
+    min-height: 100vh;
+}
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(var(--navColor), var(--navColor2));
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 1.1%;
+    justify-content: right;
+    align-items: center;
+}
+.navbar li {
+    padding-right: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: var(--navTextColor);
+}
+.navbar a:hover {
+    text-decoration: underline;
+    color: var(--navTextColorHover);
+}
+/* Main */
+.page {
+    display: flex;
+}
+.section {
+    flex-grow: 1;
+    background-color: red;
+    min-width:100px;
+    min-height: 100px;
+}
+.content {
+    flex-grow: 3;
+    background-color: aliceblue ;
+    min-width:100px;
+    min-height: 100px;
+    padding: 30px 30px 10px 40px;
+}
+.content h1 {
+    padding-left: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 33px;
+    color: var(--contentText);
+    padding-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+}
+div.content .timeline_left {
+    border: black solid 2px;
+    border-radius: 2%;
+    max-width: 250px;
+    min-height: 30vh;
+}
+.timeline_left .XVII {
+    border: rgb(19, 15, 15) solid 1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 70%;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: start;
+    grid-auto-flow:dense;
+    
+}
+.timeline_left img {
+    border-radius: 2%;
+}
+.timeline_left .XVIII {
+    border: rgb(19, 15, 15) solid 1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 90%;
+    row-gap: 110px;
+    max-height: 290px;
+}
+.wrapper .justText {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-indent: 5%;
+}
