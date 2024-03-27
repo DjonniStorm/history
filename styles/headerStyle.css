@@ -1,0 +1,32 @@
+:root {
+    --navColor: rgba(148, 148, 148, 1);
+    --navColor2: rgba(228, 228, 228, 1);
+    --navTextColor: rgba(50, 50, 50, 0.9);
+    --navTextColorHover: rgba(15, 15, 15, 0.9);
+}
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(var(--navColor), var(--navColor2));
+    /* position: fixed; */
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 1.1%;
+    justify-content: right;
+    align-items: center;
+}
+.navbar li {
+    padding-right: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: var(--navTextColor);
+}
+.navbar a:hover {
+    text-decoration: underline;
+    color: var(--navTextColorHover);
+}

@@ -1,0 +1,18 @@
+:root {
+    --footerColor: rgba(10, 10, 10, 0.9);
+    --footerTextColor: rgba(235, 236, 237, 0.9);
+}
+.foot {
+    background-color: var(--footerColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.foot a, p {
+    color: var(--footerTextColor);
+    display: block;
+    padding: 1.1% 0px;
+}
+.foot img {
+    max-width: 30px;
+}
