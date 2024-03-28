@@ -11,3 +11,8 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+main h1, h3 {
+    padding: 20px;
+    text-align:justify;
+    font-family: 'Roboto', sans-serif';
+}

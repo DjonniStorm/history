@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--иконки-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar">
             <ul>
                 <li>
-                    <a href="pages/XVII_century.html">
+                    <a href="">
                         ГЛАВНАЯ
                     </a>
                 </li>
@@ -32,59 +35,78 @@
         </div>
     </header>
     <main>
-        <div class="page">
-            <div class="section">
+        <div class="content">
+            <div class="page">
+                <div class="left-div" onclick="moveSlides('-1')">
+                    <button id="left">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios_new
+                        </span>
+                    </button>
+                    Сюда
+                </div>
+                <div class="mainImg">
+                    <div id="XVII" class="none js-slide">
+                        XVII век
+                        <div id="Soborn">
+                            <img src="images/indexTimeline/Alexis_I_of_Russia_(1670-1680s,_GIM).jpg" alt="Алексей Михайлович">
+                            <p>
+                                В 1497 и 1550 г. на Руси издавались Судебники, посвящённые главным образом вопросам судопроизводства и уголовного права. При царе Алексее Михайловиче было составлено Соборное Уложение 1649 года - полный свод законов России, охватывающий все стороны общественной жизни. Оно было написано на очень высоком для того времени юридическом уровне и не имело аналогов в других странах.
+                            </p>
+                        </div>
+                        <h4>
+                            Соборное уложение 1649г
+                        <h4>
+                            <br> <br>
+                        <div id="Mestnichestvo">
+                            <p>
+                                Решением Земского собора было отменено местничество – система распределения служебных мест в Русском государстве XV–XVII вв. при назначении на военную, административную и придворную службу с учётом происхождения человека и служебного положения его предков.
+                            </p>
+                            <img src="images/indexTimeline/FedorRomanov.jpg" alt="Фёдор Михайлович">
+                        </div>
+                        <h4 style="text-align: right;">
+                            Отмена местничества 1682 г.
+                        <h4>
+                    </div>
+                    <div id="XVIII" class="js-slide">
 
+                    </div>
+                    <div id="XIX_1" class="none js-slide">
+
+                    </div>
+                    <div id="XIX_2" class="none js-slide">
+
+                    </div>
+                </div>
+                <div class="right-div" onclick="moveSlides('+1')">
+                    <button id="right">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </button>
+                    Туда
+                </div>
             </div>
-            <div class="content">
-                <h1>
-                    Реформы династии Романовых
-                </h1>
-                <div class="wrapper">
+            <div class="timeline">
+                <div class="XVI">
 
-                    <div class="timeline_left">
-                        <div class="XVII">
-                            <p>
-                                <span><b>XVII</b></span>
-                            </p>
-                            <img src="images/indexTimeline/MichailRomanov.png">
-                            <img src="images/indexTimeline/AlexeyRomanov.png">
-                            <img src="images/indexTimeline/FedorRomanov.jpg">
-                            <img src="images/indexTimeline/SofiaAlexeevna.jpg">
-                            <p></p>
-                            <img src="images/indexTimeline/Ivan5.png">
-                            
-                            <img src="images/indexTimeline/Petr1.png">
-                            
-                        </div>
-                        <div class="XVIII">
-                            <p><span><b>XVIII</b></span></p>
-                            
-                        </div>
-                        <div class="XIX">
-                            <p>
-                                <span><b>XIX</b></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="justText">
-                        <p>
-                            Династия Романовых правила Россией 304 года, с 1613 по 1917. Она сменила на престоле династию Рюриковичей. За время правления Романовых на русском престоле сменилось 17 правителей, а в 1771 году Россия из Царства становится Империей.
-                        </p>
-                    </div>
+                </div>
+                <div class="XVII">
+
+                </div>
+                <div class="XVIII">
+
+                </div>
+                <div class="XIX">
+
                 </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="foot">
-            <p>
-                На главную
-            </p>
-            <div>
-                <img src="images/icons/VK_Compact_Logo_(2021-present).svg.png" alt="vk">
-                <img src="images/icons/tg.png" alt="tg">
-            </div>
+            <img src="images/icons/VK_Compact_Logo_(2021-present).svg.png" alt="vk">
+            <img src="images/icons/tg.png" alt="tg">
         </div>
     </footer>
 </body>

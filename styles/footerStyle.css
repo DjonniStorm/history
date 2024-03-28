@@ -6,13 +6,15 @@
     background-color: var(--footerColor);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: right;
 }
 .foot a, p {
     color: var(--footerTextColor);
     display: block;
-    padding: 1.1% 0px;
+    padding: 0.5% 0px;
 }
 .foot img {
-    max-width: 30px;
+    max-width: 23px;
+    padding-right: 4px;
+    padding-top: 2px;
 }
