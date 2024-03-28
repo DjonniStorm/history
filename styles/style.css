@@ -94,8 +94,20 @@ div.timeline {
 #XVII #Soborn,  #Mestnichestvo{
     display: flex;
 }
-#Soborn p, #Mestnichestvo p{ padding: 15px; text-align: justify; font-size: 14px; font-weight: 700;}
-#Soborn img, #Mestnichestvo img{
+#Soborn p, #Mestnichestvo p { padding: 15px; text-align: justify; font-size: 14px; font-weight: 700;}
+#Soborn img, #Mestnichestvo img, #EkaterinaII img, #AlexandrI img{
     width: 25%;
     border-radius: 10%;
 }
+div#PeterI img {
+    width: 20%;
+}
+div#PeterI p, div#EkaterinaII p, #AlexandrI p {padding: 10px;}
+#XVIII div#PeterI, #XVIII div#EkaterinaII, #XIX_1 div#AlexandrI {
+    display: flex;
+    padding: 10px;
+    text-align: justify;
+    align-items: center;
+}
+
+
