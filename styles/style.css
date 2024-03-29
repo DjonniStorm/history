@@ -19,8 +19,8 @@ html {
     --btnColorHover:      rgba(120, 120, 120, 0.9);
     --btnBorderColorHover:rgba(70, 70, 70, 0.9);
     --btnDivTextColor:    rgba(190, 190, 190, 0.9);
-    --imgPlaceColor1:     rgba(160, 160, 160, 0.8);
-    --imgPlaceColor2:     rgba(190, 190, 190, 0.8);
+    --imgPlaceColor1:     rgba(250, 250, 250, 0.5);
+    --imgPlaceColor2:     rgba(230, 230, 230, 0.6);
     --imgTextColor1:      rgba(60, 60, 60, 0.9);
 
     /*   */
@@ -68,14 +68,14 @@ main .content {
     color: var(--btnDivTextColor);
     user-select: none;
 }
-.page button {
+.page button#left, .page button#right {
     min-width:  70px;
     min-height: 70px;
     background-color: var(--btnColor);
     border: 3px solid var(--btnBorderColor);
     border-radius: 10%;
 }
-.page button:hover {
+.page button#left:hover, .page button#right:hover {
     background-color: var(--btnColorHover);
     border-color: var(--btnBorderColorHover);
     color: #EEE;
@@ -84,41 +84,41 @@ main .content {
     color: var(--imgTextColor1);
 }
 .mainImg {
-    width: 75%;
-    height: 70%;
+    width: 85%;
+    height: 75%;
     border-radius: 1%;
-    border: 2px solid #999;
+    border: 2px solid #EEE;
     background: linear-gradient(var(--imgPlaceColor1), var(--imgPlaceColor2));
     color: var(--imgTextColor1);
-    padding: 15px;
+    
     font-family: 'Roboto', sans-serif;
 }
 .mainImg p {
-    font-size: 18px;
+    font-size: 14px;
     text-align: justify;
+    font-style: italic;
 }
 .mainImg h3 {
-    font-size: 23px;
+    font-size: 33px;
     margin-bottom: 2px;
 }
-#XVII #Soborn,  #Mestnichestvo, #PeterI, #EkaterinaII, #course, #AlexandrI,
+.mainImg h4 {
+    font-size: 16px;
+    color: black;
+}
+.mainImg #rbtn {
+    background-color: black;
+    border-radius: 5%;
+    width: 120px;
+    height: 70px;
+    color: #EEE;
+}
+#XVII #PeterI, #EkaterinaII, #course, #AlexandrI,
 #AlexanderII, #pravo, #NikolayII, #Stolypin
 {
     display: flex;
 }
-#Soborn img{
-    width: 18%;
-}
-#Soborn {
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: var(--brownColor);
-}
-#Mestnichestvo {
-    width: 75%;
-    background-color: var(--blueColor);
-}
-#Soborn p, #Mestnichestvo p, #PeterI p, #EkaterinaII p, #course p, #AlexandrI p,
+#PeterI p, #EkaterinaII p, #course p, #AlexandrI p,
 #AlexanderII p, #pravo p, #NikolayII p, #Stolypin p
 {
     padding: 10px;
@@ -127,6 +127,39 @@ main .content {
 #NikolayII img
 {
     width: 15%;
+}
+
+#XVII {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#XVII .topDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#sobornoe {
+    display: flex;
+    background-color: var(--brownColor);
+    max-width: 59%;
+}
+#procvet {
+    display: flex;
+    background-color: var(--redColor);
+    max-width: 39%;
+}
+.contentInside {
+    padding: 10px;
+}
+#mestnich {
+    display: flex;
+    background-color: var(--blueColor);
+    max-width: 70%;
+}
+.bottomDiv {
+    display: flex;
+    gap: 25px;
 }
 #PeterI, #pravo {
     background-color: var(--blueColor);
@@ -169,58 +202,47 @@ main .content {
 /*   */
 .timeline {
     display: flex;
-    overflow: auto;
     justify-content: space-between;
+    overflow: auto;
+    overflow-x: auto;
 }
-.timeline .time {
-    border: #CCC solid 1px;
-    flex: 0.44;
+.timeline p {
+    color: black;
 }
-.persons {
-    height: 60%;
-    background-color:#EEE;
-}
-.dates {
-    height: 40%;
-}
-.justLine {
-    margin: 5px 0px;
-    height: 1px;
-    width: 100%;
-    background-color: black;
-}
-.topic {
-    text-align: center;
+.timeline .centures {
+    background-color: blue;
+    border: 2px #EEE solid;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .line {
     width: 100%;
-    height: 1px;
-    background-color: dimgray;
-}
-.wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 2px;
+    background-color: black;
 }
 .notLine {
+    width: 2px;
     height: 10px;
-    width: 1px;
-    background-color: dimgray;
+    background-color: black;
 }
-.likeLine {
+.XVII-point-year {
     display: flex;
 }
-.year {
-    text-align: right;
+.century-description {
+    text-align: center;
+}
+.century-cd1, .century-cd2 {
+    width: calc(99% / 3);
+}
+.century-cd1 {
     display: flex;
+    justify-content: left;
+    gap: 20%;
 }
-.year p {
-    color: black;
-}
-.likeLine  .line {
-    max-width: calc(99% / 3);
-}
-.curYear {
-    min-width: calc(100% / 3);
-    user-select: none;
+.century-cd2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
