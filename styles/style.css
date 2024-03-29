@@ -166,16 +166,61 @@ main .content {
     width: 100%;
     background-color: var(--blueColor);
 }
-
+/*   */
 .timeline {
-    background-color: #FFF;
     display: flex;
     overflow: auto;
+    justify-content: space-between;
 }
 .timeline .time {
     border: #CCC solid 1px;
-    min-width: 70%;
+    flex: 0.44;
+}
+.persons {
+    height: 60%;
+    background-color:#EEE;
+}
+.dates {
+    height: 40%;
 }
 .justLine {
-
+    margin: 5px 0px;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.topic {
+    text-align: center;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: dimgray;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.notLine {
+    height: 10px;
+    width: 1px;
+    background-color: dimgray;
+}
+.likeLine {
+    display: flex;
+}
+.year {
+    text-align: right;
+    display: flex;
+}
+.year p {
+    color: black;
+}
+.likeLine  .line {
+    max-width: calc(99% / 3);
+}
+.curYear {
+    min-width: calc(100% / 3);
+    user-select: none;
 }
