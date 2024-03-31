@@ -106,46 +106,45 @@ main .content {
     font-size: 16px;
     color: black;
 }
-.mainImg #rbtn {
+/* Кнопка на слайдах */
+.mainImg .rbtn {
     background-color: black;
     border-radius: 5%;
     width: 120px;
     height: 70px;
     color: #EEE;
 }
-#XVII #PeterI, #EkaterinaII, #course, #AlexandrI,
-#AlexanderII, #pravo, #NikolayII, #Stolypin
-{
-    display: flex;
-}
-#PeterI p, #EkaterinaII p, #course p, #AlexandrI p,
-#AlexanderII p, #pravo p, #NikolayII p, #Stolypin p
-{
-    padding: 10px;
-}
-#PeterI img, #EkaterinaII img, #AlexanderII img,
-#NikolayII img
-{
-    width: 15%;
+.rbtn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
 
-#XVII {
+#XVII, #XVIII, #XIX_1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#XVII .topDiv {
+#XVII .topDiv, #XVIII .topDiv, 
+#XIX_1 .topDiv, #XIX_2 .topDiv,
+#XX .topDiv {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 20px;
+}
+#sobornoe, #procvet, #mestnich, 
+#PeterThe1, #Ekaterinathe2, #army,
+#AlexanderI, #Senat, #reformCourse,
+#AlexanderII, #pravo, #radicalReformes,
+#NikolayII, #Stolypin, #duma {
+    display: flex;
 }
 #sobornoe {
-    display: flex;
     background-color: var(--brownColor);
     max-width: 59%;
 }
 #procvet {
-    display: flex;
     background-color: var(--redColor);
     max-width: 39%;
 }
@@ -153,7 +152,6 @@ main .content {
     padding: 10px;
 }
 #mestnich {
-    display: flex;
     background-color: var(--blueColor);
     max-width: 70%;
 }
@@ -161,43 +159,83 @@ main .content {
     display: flex;
     gap: 25px;
 }
-#PeterI, #pravo {
+#PeterThe1 img {
+    width: 22%;
+}
+#PeterThe1 {
     background-color: var(--blueColor);
-    width: 95%;
 }
-#EkaterinaII, #NikolayII {
-    background-color: var(--redColor);
-    width: 100%;
+#Ekaterinathe2 img {
+    width: 30%;
 }
-#course {
+#Ekaterinathe2 {
     background-color: var(--brownColor);
 }
-#course img {
-    width: 25%;
-    height: 25%;
-    
+#army img {
+    width: 40%;
 }
-#AlexandrI {
+#army {
     background-color: var(--redColor);
-    width: 95%;
-    
+    width: 70%;
 }
-#AlexandrI img {
-    width: 12%;
+#AlexanderI img {
+    width: 30%;
 }
-#AlexanderII {
+#AlexanderI {
     background-color: var(--brownColor);
+    width: 50%;
 }
-#pravo img {
+#Senat img {
+    width: 50%;
+}
+#Senat {
+    background-color: var(--blueColor);
+    width: 50%;
+}
+#reformCourse img {
     width: 20%;
 }
+#reformCourse {
+    background-color: var(--redColor);
+    width: 80%;
+}
+#AlexanderII img {
+    width: 20%;
+}
+#AlexanderII {
+    background-color: var(--blueColor);
+    width: 50%;
+}
+#pravo img {
+    width: 40%;
+}
+#pravo {
+    background-color: var(--brownColor);
+    width: 50%;
+}
+#radicalReformes {
+    background-color: var(--redColor);
+    width: 69%;
+}
+#NikolayII img {
+    width: 30%;
+}
+#NikolayII {
+    background-color: var(--blueColor);
+}
 #Stolypin img {
-    width: 17%;
-    height: 15%;
+    width: 30%;
 }
 #Stolypin {
-    width: 100%;
-    background-color: var(--blueColor);
+    background-color: var(--brownColor);
+
+}
+#duma img {
+    width: 40%;
+}
+#duma {
+    background-color: var(--redColor);
+    width: 69%;
 }
 /*да тут много звёздочек* 
     тут получается нижняя временная линия
