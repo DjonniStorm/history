@@ -250,7 +250,7 @@ main .content {
     font-size: 14px;
 }
 .timeline .centures {
-    background-color: blue;
+    background-color:antiquewhite;
     border: 2px #EEE solid;
     min-width: 75%;
     display: flex;
@@ -290,4 +290,7 @@ main .content {
 }
 .XVII-point-year {
     display: flex;
+}
+.timeline::-webkit-scrollbar {
+    display: none;
 }
