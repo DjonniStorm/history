@@ -35,7 +35,7 @@ body {
     scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 /* Main */
 main {
@@ -45,7 +45,7 @@ main {
 main .content {
     height: 100%;
     display: grid;
-    grid-template-rows: 80% 20%;
+    grid-template-rows: 75% 25%;
 }
 .none {
     display: none !important;
@@ -85,7 +85,7 @@ main .content {
 }
 .mainImg {
     width: 85%;
-    height: 75%;
+    height: 95%;
     border-radius: 1%;
     border: 2px solid #EEE;
     background: linear-gradient(var(--imgPlaceColor1), var(--imgPlaceColor2));
@@ -199,12 +199,13 @@ main .content {
     width: 100%;
     background-color: var(--blueColor);
 }
-/*   */
+/*да тут много звёздочек* 
+    тут получается нижняя временная линия
+*   */
 .timeline {
     display: flex;
-    justify-content: space-between;
-    overflow: auto;
-    overflow-x: auto;
+    overflow-y: scroll;
+    overflow-y: auto;
 }
 .timeline p {
     color: black;
@@ -215,34 +216,38 @@ main .content {
     min-width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
+/*её верхняя часть*/
+.century-content {
+    flex-grow: 2;
+    display: flex;
+}
+.century-content-part img {
+    width: 20%;
+}
+.century-content-part {
+    width: calc(99% / 3);
+    display: flex;
+    padding: 5px;
+}
+.century-content-part-text {
+    padding: 5px;
+}
+/*её нижняя часть с датами и подписью*/
 .line {
     width: 100%;
     height: 2px;
     background-color: black;
 }
 .notLine {
-    width: 2px;
+    width: 10px;
     height: 10px;
     background-color: black;
 }
-.XVII-point-year {
-    display: flex;
-}
 .century-description {
     text-align: center;
+    flex-grow: 1;
 }
-.century-cd1, .century-cd2 {
-    width: calc(99% / 3);
-}
-.century-cd1 {
+.XVII-point-year {
     display: flex;
-    justify-content: left;
-    gap: 20%;
-}
-.century-cd2 {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
 }
