@@ -33,8 +33,8 @@ function slider() {
     $slides[nowSlide].classList.remove('none')
     $timelineCentures[nowSlide].scrollIntoView({ block: "center", behavior: "smooth" })
     let counter = 1
-    let interval1 = setInterval(() => {
-        $slides[nowSlide].style.opacity = (0.2 * counter).toString()
+    let interval1 = setInterval(() => { 
+        $slides[nowSlide].style.opacity = (0.2 * counter).toString() 
         counter++
         if (counter >= 6) clearInterval(interval1)
     }, 100)
