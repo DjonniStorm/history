@@ -142,11 +142,11 @@ main .content {
 }
 #sobornoe {
     background-color: var(--brownColor);
-    max-width: 59%;
+    max-width: 49%;
 }
 #procvet {
     background-color: var(--redColor);
-    max-width: 39%;
+    max-width: 51%;
 }
 .contentInside {
     padding: 10px;
@@ -179,7 +179,7 @@ main .content {
     width: 70%;
 }
 #AlexanderI img {
-    width: 30%;
+    width: 40%;
 }
 #AlexanderI {
     background-color: var(--brownColor);
@@ -190,7 +190,7 @@ main .content {
 }
 #Senat {
     background-color: var(--blueColor);
-    width: 50%;
+    width: 60%;
 }
 #reformCourse img {
     width: 20%;
@@ -200,7 +200,7 @@ main .content {
     width: 80%;
 }
 #AlexanderII img {
-    width: 20%;
+    width: 29%;
 }
 #AlexanderII {
     background-color: var(--blueColor);
@@ -218,13 +218,13 @@ main .content {
     width: 69%;
 }
 #NikolayII img {
-    width: 30%;
+    width: 40%;
 }
 #NikolayII {
     background-color: var(--blueColor);
 }
 #Stolypin img {
-    width: 30%;
+    width: 40%;
 }
 #Stolypin {
     background-color: var(--brownColor);
