@@ -9,7 +9,7 @@ window.onload = () => {
         lastUpdate = localStorage.getItem('lastUpdate')
         lastUpdateMins = localStorage.getItem('lastUpdateMins')
         let date = new Date()
-        if (Math.abs(parseInt(lastUpdate) * 60 + parseInt(lastUpdateMins) - date.getHours() * 60 + date.getMinutes()) < 60) {
+        if (Math.abs(parseInt(lastUpdateMins) - date.getMinutes()) < 20) {
             nowSlide = localStorage.getItem('slideNum')
             slider()
         }
