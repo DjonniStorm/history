@@ -47,4 +47,8 @@ function slider() {
         counter++
         if (counter >= 6) clearInterval(interval1)
     }, 100)
+    $btnLeft.classList.remove('none')
+    $btnRight.classList.remove('none')
+    if (nowSlide == 0) $btnLeft.classList.add('none')
+    if (nowSlide == $slides.length - 1) $btnRight.classList.add('none')
 }
