@@ -1,8 +1,15 @@
-document.querySelector('a').addEventListener('click', (event) => event.preventDefault())
 const $slides   = document.querySelectorAll('.js-slide')
 let nowSlide    = 0
 //а теперь двигаем блоки в таймлайне
 const $timelineCentures = document.querySelectorAll('.century-content')
+
+window.onload = () => {
+    try {
+        nowSlide = localStorage.getItem('slideNum')
+        slider()
+
+    } catch(e) {}
+}
 function direction(direction) {
     switch(direction) {
         case '+1':
@@ -10,13 +17,15 @@ function direction(direction) {
             if (nowSlide >= $slides.length) {
                 nowSlide = $slides.length - 1
             }
+            localStorage.setItem('slideNum', nowSlide)
             slider()
             break
-        case '-1':
+            case '-1':
             nowSlide--
             if (nowSlide < 0) {
                 nowSlide = 0
             }
+            localStorage.setItem('slideNum', nowSlide)
             slider()
             break
         default:
@@ -38,8 +47,4 @@ function slider() {
         counter++
         if (counter >= 6) clearInterval(interval1)
     }, 100)
-    if (nowSlide === 0 && !$btnLeft.classList.contains('none')) $btnLeft.classList.add('none')
-    else if ($btnLeft.classList.contains('none') && nowSlide !== 0) $btnLeft.classList.remove('none')
-    if (nowSlide === $slides.length - 1 && !$btnRight.classList.contains('none')) $btnRight.classList.add('none')
-    else if ($btnRight.classList.contains('none') && nowSlide !== $slides.length - 1) $btnRight.classList.remove('none')
 }

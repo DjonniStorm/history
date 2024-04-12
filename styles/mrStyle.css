@@ -46,7 +46,7 @@ main h1, h3 {
 #content {
     padding: 0 25px 0 20px;
     overflow-y: scroll;
-    height: 86vh;
+    height: 85vh;
 }
 #content h3 {
     text-align: center;
