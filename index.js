@@ -2,12 +2,17 @@ const $slides   = document.querySelectorAll('.js-slide')
 let nowSlide    = 0
 //а теперь двигаем блоки в таймлайне
 const $timelineCentures = document.querySelectorAll('.century-content')
-
+let lastUpdate
+let lastUpdateMins
 window.onload = () => {
     try {
-        nowSlide = localStorage.getItem('slideNum')
-        slider()
-
+        lastUpdate = localStorage.getItem('lastUpdate')
+        lastUpdateMins = localStorage.getItem('lastUpdateMins')
+        let date = new Date()
+        if (Math.abs(parseInt(lastUpdate) * 60 + parseInt(lastUpdateMins) - date.getHours() * 60 + date.getMinutes()) < 60) {
+            nowSlide = localStorage.getItem('slideNum')
+            slider()
+        }
     } catch(e) {}
 }
 function direction(direction) {
@@ -18,6 +23,9 @@ function direction(direction) {
                 nowSlide = $slides.length - 1
             }
             localStorage.setItem('slideNum', nowSlide)
+            localStorage.setItem('lastUpdate', new Date().getHours())
+            localStorage.setItem('lastUpdateMins', new Date().getMinutes())
+            console.log(typeof(lastUpdate))
             slider()
             break
             case '-1':
@@ -26,6 +34,8 @@ function direction(direction) {
                 nowSlide = 0
             }
             localStorage.setItem('slideNum', nowSlide)
+            localStorage.setItem('lastUpdate', new Date().getHours())
+            localStorage.setItem('lastUpdateMins', new Date().getMinutes())
             slider()
             break
         default:
