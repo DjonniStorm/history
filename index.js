@@ -69,11 +69,20 @@ function slider() {
 // const timeline = document.querySelector('.timeline')
 // const centures = document.querySelectorAll('.centures') 
 
-// centures.forEach(element => {
-//     const rect = element.getBoundingClientRect()
-//     if (!(rect.left + 10 < 0 || rect.right > timeline.clientWidth)) {
-//         element.addEventListener('scroll', () => {
-            
-//         })
+// timeline.addEventListener('scroll', () => {
+//     const scrollPosition = timeline.scrollWidth;
+//     console.log(centures)
+//     let iWannaTo 
+//     for (let i = 0; i < scrollPosition / centures[0].clientWidth / timeline.cl; i++) {
+//         const rect = centures[i].getBoundingClientRect()
+//         if (rect.x + 10 < 0) continue
+//         if (rect.x + centures[i].scrollWidth - 10 > timeline.clientWidth) continue
+//         iWannaTo = i
+//     }
+//     try {
+//         nowSlide = iWannaTo
+//         slider()
+//     } finally {
+//         console.log('не получилось')
 //     }
 // })
