@@ -5,9 +5,574 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeah, Bash!</title>
     <link rel="shortcut icon" href="images/Эмблема_УлГТУ.ico">
-    <link rel="stylesheet" href="/styles/style.css">
+    <!--Подключаем стили-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/headerStyle.css">
+    <link rel="stylesheet" href="styles/footerStyle.css">
+    <!--Шрифт Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--иконки-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="pages/XVIII_century.html">
+                        ГЛАВНАЯ
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/about.html">
+                        О НАС
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="page">
+                <div class="left-div" onclick="direction('-1')">
+                    <button id="left" class="none">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios_new
+                        </span>
+                    </button>
+                    Сюда
+                </div>
+                <div class="mainImg">
+                    <div id="XVII" class="js-slide">
+                        <h3>
+                            XVII век
+                        </h3>
+                        <div class="topDiv">
+                            <div id="sobornoe">
+                                <img src="images/indexTimeline/Alexis_I_of_Russia_(1670-1680s,_GIM).jpg" alt="Алексей Михайлович">
+                                <div class="contentInside">
+                                    <h4>
+                                        СОБОРНОЕ УЛОЖЕНИЕ
+                                    </h4>
+                                    <p>
+                                        В 1497 и 1550 г. на Руси издавались Судебники, посвящённые главным образом вопросам судопроизводства и уголовного права. При царе Алексее Михайловиче было составлено Соборное Уложение 1649 года - полный свод законов России, охватывающий все стороны общественной жизни. Оно было написано на очень высоком для того времени юридическом уровне и не имело аналогов в других странах.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="procvet">
+                                <div class="contentInside">
+                                    <h4>
+                                        Россия в XVII веке
+                                    </h4>
+                                    <p>
+                                        История России в 17 веке представляет собой весьма интересный период, от Смутного времени до начала петровских реформ. Государство значительно расширило свои территории на юге, западе и востоке. Это заметно по карте
+                                    </p>
+                                </div>
+                                <img src="images/indexTimeline/russia_in_XVII_cent .jpg" alt="Россия в 17 веке">
+                            </div>
+                        </div> <br>
+                        <div class="bottomDiv">
+                            <div id="mestnich">
+                                <img src="images/indexTimeline/FedorRomanov.jpg" alt="Фёдор Михайлович">
+                                <div class="contentInside">
+                                    <h4>
+                                        ОТМЕНА МЕСТНИЧЕСТВА
+                                    </h4>
+                                    <p>
+                                        Решением Земского собора было отменено местничество – система распределения служебных мест в Русском государстве XV–XVII вв. при назначении на военную, административную и придворную службу с учётом происхождения человека и служебного положения его предков.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="rbtn">
+                                <a href="pages/XVII_century.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="XVIII" class="js-slide none">
+                        <h3>XVIII век</h3>
+                        <div class="topDiv">
+                            <div id="PeterThe1">
+                                <img src="images/indexTimeline/Petr.jpg" alt="Пётр I">
+                                <div class="contentInside">
+                                    <h4>
+                                        Реформы Петра I
+                                    </h4>
+                                    <p>В начале века имели место реформы Петра Великого. Они довели до логического конца тенденции развития России в XVII в., но при этом проводились насильственными методами, оказались очень радикальными и изменили все стороны жизни государства и господствующего класса.</p>
+                                </div>
+                            </div>
+                            <div id="Ekaterinathe2">
+                                 <img src="images/indexTimeline/EkaterinaII.jpg" alt="Екатерина II">
+                                 <div class="contentInside">
+                                    <h4>Екатерина II</h4>
+                                    <p>Наиболее яркой правительницей эпохи дворцовых переворотов была Екатерина II. Она, как подобает образованной немецкой принцессе XVIII в., разделяла идеи Просвещения, стремилась действовать убеждением, а не насилием, учитывать желания подданных и предоставить им возможно широкие права.</p>
+                                 </div>
+                            </div>
+                        </div> <br>
+                        <div class="bottomDiv">
+                            <div id="army">
+                                <img src="images/indexTimeline/army.jpg" alt="Аримия и флот">
+                                <div class="contentInside">
+                                    <h4>АРМИЯ И ФЛОТ</h4>
+                                    <p>В результате военных реформ Россия получила одну из лучших в Европе (и мире) регулярную армию и военный флот. Это позволило добиться выхода к Балтийскому морю и статуса великой державы. Для обеспечения армии и флота была создана (в основном на казённые деньги) промышленность.</p>
+                                </div>
+                            </div>
+                            <div class="rbtn">
+                                <a href="pages/XVIII_century.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="XIX_1" class="js-slide none">
+                        <h3>
+                            XIX век первая половина
+                        </h3>
+                        <div class="topDiv">
+                            <div id="AlexanderI">
+                                <img src="images/indexTimeline/Александр_I.jpg" alt="Александр I">
+                                <div class="contentInside">
+                                    <h4>Александр I</h4>
+                                    <p>Годы правления 1801-1825 гг. Старший сын российского императора Павла I. В начале правления Александр I провел умеренно либеральные реформы, разработанные Негласным комитетом и М. М. Сперанским. Во внешней политике лавировал между Великобританией и Францией.</p>
+                                </div>
+                            </div>
+                            <div id="Senat">
+                                <div class="contentInside">
+                                    <h4>Именной указ о правах и обязанностях Сената</h4>
+                                    <p>Пётр создавал Сенат как высшее административное и законодательное учреждение, ведающее текущими делами под руководством монарха и его доверенных приближённых. Однако потом значение Сената падало. При Александре I было решено превратить Сенат в высший орган суда и надзора за администрацией. </p>
+                                </div>
+                                <img src="images/indexTimeline/Senat.jpg" alt="Здание Сената в 1836 году">
+                            </div>
+                        </div> <br>
+                        <div class="bottomDiv">
+                            <div id="reformCourse">
+                                <img src="images/indexTimeline/eagle.PNG" alt="Орёл">
+                                <div class="contentInside">
+                                    <h4>Курс реформ</h4>
+                                    <p>В I половине XIX в. российские реформы были направлены на упорядочивание государственного управления, сословного строя и законодательства без внесения принципиальных изменений. В истории российских реформ I половина XIX в. началась с царствования императора Павла. В царствование Александра I было реформировано центральное управление. При вступлении на престол Николая I были подавлены последние попытки вмешательства гвардии в престолонаследие, что окончательно устранило угрозу дворцовых переворотов.</p>
+                                </div>
+                            </div>
+                            <div class="rbtn">
+                                <a href="pages/XIX_century.part1.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="XIX_2" class="js-slide none">
+                        <h3>
+                            XIX век вторая половина
+                        </h3>
+                        <div class="topDiv">
+                            <div id="AlexanderII">
+                                <img src="images/indexTimeline/AlexanderII.jpg" alt="Александр II">
+                                <div class="contentInside">
+                                    <h4>
+                                        АЛЕКСАНДР II
+                                    </h4>
+                                    <p>
+                                        Император всероссийский (1855—1881). Вошёл в историю как проводник широкомасштабных реформ. Удостоен особого эпитета — Освободитель (в связи с отменой крепостного права по манифесту 19 февраля 1861 года). Погиб в результате террористического акта, организованного партией «Народная воля».
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="pravo">
+                                <div class="contentInside">
+                                    <h4>
+                                        ОТМЕНА КРЕПОСТНОГО ПРАВА
+                                    </h4>
+                                    <p>
+                                        Реформа, начатая в 1861 году, упразднившая крепостное право в Российской империи. Явилась первой по времени и наиболее значимой из реформ императора Александра II; возвещалась Манифестом об отмене крепостного права от 19 февраля 1861 года.
+                                    </p>
+                                </div>
+                                <img src="images/indexTimeline/krepostnoePravo.jpg" alt="Отмена крепостного права">
+                            </div>
+                        </div> <br>
+                        <div class="bottomDiv">
+                            <div id="radicalReformes">
+                                <img alt="">
+                                <div class="contentInside">
+                                    <h4>Период радикальных реформ</h4>
+                                    <p>Вторая половина XIX в. вошла в историю России как период радикальных реформ, затронувших все стороны жизни страны. Поражение в Крымской войне показало невозможность сохранения прежних порядков, ведущих к отсталости (в т.ч. военной) страны. Поэтому император Александр II принял решение об отмене крепостного права, тормозившего развитие России. Между тем оно лежало в основе социально-политического строя империи, поэтому освобождение крестьян повлекло дальнейшие преобразования.</p>
+                                </div>
+                            </div>
+                            <div class="rbtn">
+                                <a href="pages/XIX_century.part2.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="XX" class="js-slide none">
+                        <h3>
+                            XX век начинается
+                        </h3>
+                        <div class="topDiv">
+                            <div id="NikolayII">
+                                <img src="images/indexTimeline/NikolayII.jpg" alt="Николай II">
+                                <div class="contentInside">
+                                    <h4>
+                                        НИКОЛАЙ II
+                                    </h4>
+                                    <p>
+                                        Последний российский император (1894-1917), старший сын императора Александра III. При Николае II Россия потерпела поражение в русско-японской войне 1904-05, что явилось одной из причин Революции 1905-1907, в ходе которой был принят Манифест 17 октября 1905, разрешавший создание политических партий и учреждавший Государственную думу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="Stolypin">
+                                <div class="contentInside">
+                                    <h4>
+                                        ПЁТР АРКАДЬЕВИЧ СТОЛЫПИН
+                                    </h4>
+                                    <p>
+                                        Государственный деятель Российской империи. В разные годы занимал посты уездного предводителя дворянства в Ковно, Гродненского и Саратовского губернатора, министра внутренних дел, премьер-министра. Возглавив правительство Российской империи, Столыпин имел смелость взять на себя историческую ответственность за крутой поворот в стратегическом курсе страны. Избранный курс Столыпину приходилось защищать в упорной борьбе.
+                                    </p>
+                                </div>
+                                <img src="images/indexTimeline/Stolypin.jpg" alt="Столыпин">
+                            </div>
+                        </div> <br>
+                        <div class="bottomDiv">
+                            <div id="duma">
+                                <img src="images/indexTimeline/duma.PNG" alt="Император Николай II произносит речь в день открытия Первой Государственной Думы в Георгиевском зале Зимнего дворца.">
+                                <div class="contentInside">
+                                    <h4>Учреждение Государственной Думы</h4>
+                                    <p>Образование первого в истории Российской империи представительного законодательного органа стало результатом революции 1905 года. 6 августа 1905 года Император Николай II издал Манифест о создании и порядке формирования одной из палат парламента – Государственной Думы. Второй палатой являлся Государственный совет Российской империи.</p>
+                                </div>
+                            </div>
+                            <div class="rbtn">
+                                <a href="pages/XX_century.html">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-div" onclick="direction('+1')">
+                    <button id="right">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </button>
+                    Туда
+                </div>
+            </div>
+            <!--Сам таймлайн нижний-->
+            <div class="timeline">
+                <!--Его отделы по векам-->
+                <div class="centures">
+                    <!--Всё чтобы расположить типо в два ряда - 1-->
+                    <!--Верхняя часть -->
+                    <div class="century-content">
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Земский собор</h4>
+                                <div style="text-align: justify;">
+                                    <p>Избрал на царство Михаила Романова</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/ZemskiySobor1613.jpg" alt="Земский собор 1613">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Соборное уложение</h4>
+                                <div style="text-align: justify;">
+                                    <p>Полный свод законов России, охватывающий все стороны общественной жизни</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/Alexis_I_of_Russia_(1670-1680s,_GIM) (3).jpg" alt="Соборное уложение">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Отмена местничества</h4>
+                                <div style="text-align: justify;">
+                                    <p>Отмена системы распределения служебных мест в соответствии с происхождением человека</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/books.jpg" alt="Сожжение разрядных книг">
+                        </div>
+                    </div>
+                    <!--Всё чтобы расположить типо в два ряда - 2-->
+                    <!--Нижняя часть-->
+                    <div class="century-description">
+                        <div class="XVII-point-year">
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1613
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1649
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1682
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                        </div>
+                        
+                        <div class="info">
+                            <p>
+                                Московское княжество 17век
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centures">
+                    <div class="century-content">
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Табель о рангах</h4>
+                                <div style="text-align: justify;">
+                                    <p>Табель о рангах являлась важнейшим законом об организации государственной службы.</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/tabelabout.jpg" alt="Табель о рангах">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Учреждение Московского университета</h4>
+                                <div style="text-align: justify;">
+                                    <p>Указ о создании был подписан императрицей Елизаветой Петровной</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/Moscow_Red_Square_rathaus,_survey_by_Bove.jpg" alt="МГУ">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Учреждение для управления губерний</h4>
+                                <div style="text-align: justify;">
+                                    <p>Страна была разделена на губернии, было регламентированы административные и судебные учреждения.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="century-description">
+                        <div class="XVII-point-year">
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1722
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1755
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1775
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info">
+                            <p>
+                                Российская империя 18век
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centures">
+                    <div class="century-content">
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Устав о цензуре</h4>
+                                <div style="text-align: justify;">
+                                    <p>Составлен по датскому образцу и устанавливал предварительную цензуру</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/censoreustav.jpg" alt="Табель о рангах">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Общее учреждение министерств</h4>
+                                <div style="text-align: justify;">
+                                    <p>Министерства получили продуманные разделение функций, внутреннюю организацию и порядок принятия решений.</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/Корзухин-А.И.-Заседание-Государственного-Совета.-Россия-первая-половина-XIX-в.-Х.-м.-2105х320.jpg" alt="Заседание государственного совета">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Университетский устав</h4>
+                                <div style="text-align: justify;">
+                                    <p>Была значительно ограничена самостоятельность вуза</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/UstavUnivercity1835.jpg" alt="Университетский устав">
+                        </div>
+                    </div>
+                    <div class="century-description">
+                        <div class="XVII-point-year">
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1804
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1811
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1835
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info">
+                            <p>
+                                Российская империя первая половина 19века
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centures">
+                    <div class="century-content">
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Манифест об отмене крепостного права</h4>
+                                <div style="text-align: justify;">
+                                    <p>помещики после создания крестьянского самоуправления лишились права управлять крестьянами и наказывать их</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/Reading_of_the_Manifest_(Liberation_of_peasants)_-_Kustodiev,_1907.jpg" alt="Табель о рангах">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Устав гимназий и прогимназий</h4>
+                                <div style="text-align: justify;">
+                                    <p>Министерства получили продуманные разделение функций, внутреннюю организацию и порядок принятия решений.</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/220px-Aleksandrovskoe_realnoe_uchilishche_v_Tiumeni.jpg" alt="Учёба в реальном училище">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Контрреформы Александра III</h4>
+                                <div style="text-align: justify;">
+                                    <p>Комплекс мероприятий правительства после либеральных реформ предыдущего императора</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/Alexander3.jpg" alt="Александр III">
+                        </div>
+                    </div>
+                    <div class="century-description">
+                        <div class="XVII-point-year">
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1861
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1871
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1892
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info">
+                            <p>
+                                Российская империя первая вторая 19века
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="centures">
+                    <div class="century-content">
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Программа Российской социал-демократической рабочей партии</h4>
+                                <div style="text-align: justify;">
+                                    <p>Программа была принята II съездом партии 1 августа 1903 г.</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/The_Soviet_Union_1970_CPA_3844_stamp_(2nd_Congress_of_the_RSDRP_(After_Yuri_Vinogradov)).jpg" alt="II съезд">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Положение о выборах</h4>
+                                <div style="text-align: justify;">
+                                    <p>Положение было утверждено одновременно с Учреждением (положением) Государственной думы с законосовещательными полномочиями</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/gos_duma.jpg" alt="Первый день работы Гос.Думы">
+                        </div>
+                        <div class="century-content-part">
+                            <div class="century-content-part-text">
+                                <h4>Положение о военной цензуре</h4>
+                                <div style="text-align: justify;">
+                                    <p>Положение о военной цензуре было утверждено императором на следующий день после вступления России в I мировую войну</p>
+                                </div>
+                            </div>
+                            <img src="images/bottomTimeline/original_6b601e45682968b8330b7985cde359b8.jpg" alt="Николай II">
+                        </div>
+                    </div>
+                    <div class="century-description">
+                        <div class="XVII-point-year">
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1903
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1905
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                            <div class="notLine"></div>
+                            <div>
+                                1914
+                            </div>
+                            <div class="notLine"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="info">
+                            <p>
+                                Российская империя, начало 20века
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <a href="https://vk.com/id617145792">
+                <img src="images/icons/VK_Compact_Logo_(2021-present).svg.png" alt="vk">
+            </a>
+            <a href="">
+                <img src="images/icons/tg.png" alt="tg">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
