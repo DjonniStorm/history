@@ -1,59 +1,82 @@
 const $reforms = document.querySelectorAll('.take')
 const $reformsMenu = document.querySelectorAll('#menu li')
-console.log($reformsMenu)
-console.log($reforms)
+
 const $reformsUl = document.querySelector('#reforms')
 //article с текстом реформ
 const $reformsArticle = document.querySelectorAll('#content article')
 
 
 $reformsUl.addEventListener('click', (event) => {
-    let i = event.target.id
+    let targerId = event.target.id
+    console.log(event.target, targerId)
     for (let j = 0; j < $reforms.length; j++) {
         $reforms[j].classList.remove('js-hover')
     }
-    document.querySelector(`#${i}`).classList.add('js-hover')
-    switch (i) {
+    document.querySelector(`#${targerId}`).classList.add('js-hover')
+    switch (targerId) {
         case 'allreforms' :
             $reformsArticle.forEach((element) => element.classList.remove('js-opacity-effects'))
+            $reformsMenu.forEach(element => element.classList.remove('js-li-overline'))
             break
         case 'pravo':
-            removeEffectsArticles()
-            addEffectsArticles('legalReforms')
+            addEffectsArticles($reformsArticle)
+            removeEffectsArticles('legalReforms')
+            removeLiStyle($reformsMenu)
+            liStyle('legalReforms')
             break
         case 'social':
-            removeEffectsArticles()
-            addEffectsArticles('socialReforms')
+            addEffectsArticles($reformsArticle)
+            removeEffectsArticles('socialReforms')
+            removeLiStyle($reformsMenu)
+            liStyle('socialReforms')
             break
         case 'politics':
-            removeEffectsArticles()
-            addEffectsArticles('politicalReforms')
+            addEffectsArticles($reformsArticle)
+            removeEffectsArticles('politicalReforms')
+            removeLiStyle($reformsMenu)
+            liStyle('politicalReforms')
             break
         case 'millitary':
-            removeEffectsArticles()
-            addEffectsArticles('millitaryReforms')
+            addEffectsArticles($reformsArticle)
+            removeEffectsArticles('millitaryReforms')
+            removeLiStyle($reformsMenu)
+            liStyle('millitaryReforms')
             break
         case 'economics':
-            removeEffectsArticles()
-            addEffectsArticles('economicsReforms')
+            addEffectsArticles($reformsArticle)
+            removeEffectsArticles('economicsReforms')
+            removeLiStyle($reformsMenu)
+            liStyle('economicsReforms')
             break
         case 'education':
-            removeEffectsArticles()
-            addEffectsArticles('educationAndCultureReforms')
+            addEffectsArticles($reformsArticle)
+            removeEffectsArticles('educationAndCultureReforms')
+            removeLiStyle($reformsMenu)
+            liStyle('educationAndCultureReforms')
             break
         case 'agricultural':
-            removeEffectsArticles()
-            addEffectsArticles('agriculturalReforms')
+            addEffectsArticles($reformsArticle)
+            removeEffectsArticles('agriculturalReforms')
+            removeLiStyle($reformsMenu)
+            liStyle('agriculturalReforms')
             break
         default: break
     }
 })
 
-function removeEffectsArticles() {
-    $reformsArticle.forEach(element => element.classList.add('js-opacity-effects'))
+function addEffectsArticles(addElem) {
+    addElem.forEach(element => element.classList.add('js-opacity-effects'))
 }
 
-function addEffectsArticles(effectsClass) {
-    const elements = document.querySelectorAll(`.${effectsClass}`)
+function removeEffectsArticles(category) {
+    const elements = document.querySelectorAll(`#content article.${category}`)
     elements.forEach(element => element.classList.remove('js-opacity-effects'))
+    console.log(elements)
+}
+function liStyle(category) {
+    const elements = document.querySelectorAll(`#menu li.${category}`)
+    elements.forEach(element => element.classList.remove('js-li-overline'))
+}
+function removeLiStyle(removeElem) {
+    removeElem.forEach(element => element.classList.add('js-li-overline'))
 }

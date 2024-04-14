@@ -49,12 +49,12 @@ main h1, h3 {
     list-style: none;
 }
 #menu li {
-    color:burlywood;
     padding-bottom: 10px;
     padding-left: 7px;
 }
 #menu li:hover {
     text-decoration: underline;
+    /* color: #CCC; */
 }
 #menu h2 {
     padding: 15px;
@@ -79,17 +79,12 @@ main h1, h3 {
 
 #reforms {
     display: flex;
-    text-align: center;
     background-color: azure;
-    height: 25px;
-    gap: 2px;
+    height: 28px;
+    align-items: center;
 }
 #reforms div {
-    min-width: 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    padding: 5px;
 }
 #reforms div:hover {
     background-color: aquamarine;
@@ -99,4 +94,12 @@ main h1, h3 {
 }
 .js-opacity-effects p, .js-opacity-effects li {
     color: #CCC !important;
+}
+.js-li-overline a {
+    color: #CCC;
+    text-decoration: line-through;
+}
+.legalReforms, .politicalReforms, .millitaryReforms, .socialReforms, .economicsReforms,
+.educationAndCultureReforms {
+    color: #000;
 }
