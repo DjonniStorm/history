@@ -1,4 +1,6 @@
+document.getElementById('mainA').addEventListener('click', event => event.preventDefault())
 const $slides   = document.querySelectorAll('.js-slide')
+
 let nowSlide    = 0
 //а теперь двигаем блоки в таймлайне
 const $timelineCentures = document.querySelectorAll('.century-content')
@@ -62,3 +64,16 @@ function slider() {
     if (nowSlide == 0) $btnLeft.classList.add('none')
     if (nowSlide == $slides.length - 1) $btnRight.classList.add('none')
 }
+
+/*То что по-идее должно быть другим скриптом но у меня ничего не получилось*/
+// const timeline = document.querySelector('.timeline')
+// const centures = document.querySelectorAll('.centures') 
+
+// centures.forEach(element => {
+//     const rect = element.getBoundingClientRect()
+//     if (!(rect.left + 10 < 0 || rect.right > timeline.clientWidth)) {
+//         element.addEventListener('scroll', () => {
+            
+//         })
+//     }
+// })
