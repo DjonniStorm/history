@@ -34,6 +34,9 @@ body {
     height: 100%;
     scroll-behavior: smooth;
 }
+body a {
+    text-decoration: none;
+}
 body::-webkit-scrollbar {
     /* display: none; */
 }
@@ -293,4 +296,15 @@ main .content {
 }
 .timeline::-webkit-scrollbar {
     display: none;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #666;
+}
+a {
+    color: #666;
+    font-size: large;
 }
