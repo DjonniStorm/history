@@ -218,13 +218,13 @@ main .content {
     width: 69%;
 }
 #NikolayII img {
-    width: 40%;
+    width: 43%;
 }
 #NikolayII {
     background-color: var(--blueColor);
 }
 #Stolypin img {
-    width: 40%;
+    width: 37%;
 }
 #Stolypin {
     background-color: var(--brownColor);
@@ -235,7 +235,7 @@ main .content {
 }
 #duma {
     background-color: var(--redColor);
-    width: 69%;
+    width: 79%;
 }
 /*да тут много звёздочек* 
     тут получается нижняя временная линия
