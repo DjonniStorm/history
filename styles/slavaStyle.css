@@ -12,13 +12,13 @@ body {
 }
 main {
     flex-grow: 1;
-    display: grid;
-    grid-template-columns: 25% 75%;
 }
 #menu {
     height: 100%;
     text-align: center;
     border: 2px solid blanchedalmond; 
+    max-height: 84vh;
+    overflow-y: scroll;
 }
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -45,6 +45,33 @@ p {
     text-align: justify;
     color: black !important;
 }
+#content {
+    max-height: 84vh;
+    overflow-y: scroll;
+}
 #content h1 {
     text-align: center;
 }
+#content h3 {
+    text-align: center;
+    font-size: 22px;
+}
+#content p {
+    font-style: italic;
+}
+#page {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    
+}
+#reforms {
+    display: flex;
+}
+#reforms div{
+    padding: 10px;
+
+}
+#reforms div:hover{
+    color: antiquewhite;
+}
+

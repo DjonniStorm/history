@@ -1,4 +1,4 @@
-document.querySelector('a').addEventListener('click', (event) => event.preventDefault())
+// document.querySelector('a').addEventListener('click', (event) => event.preventDefault())
 const $slides   = document.querySelectorAll('.js-slide')
 let nowSlide    = 0
 //а теперь двигаем блоки в таймлайне
