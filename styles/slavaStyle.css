@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html {
@@ -30,7 +31,6 @@ body {
 }
 main {
     flex-grow: 1;
-<<<<<<< HEAD
 }
 main h1, h3{
     padding: 20px;
@@ -42,15 +42,6 @@ main h1, h3{
     overflow-y: scroll;
     height: 84.6vh;
     direction: rtl;
-=======
-}
-#menu {
-    height: 100%;
-    text-align: center;
-    border: 2px solid blanchedalmond; 
-    max-height: 84vh;
-    overflow-y: scroll;
->>>>>>> 63f85ebea9038e54897d47b9c78d4320da163a5f
 }
 #reverse {direction: ltr;}
 #menu::-webkit-scrollbar, #content::-webkit-scrollbar {
@@ -94,16 +85,11 @@ p {
     color: black !important;
 }
 #content {
-<<<<<<< HEAD
     padding: 0 25px 0 20px;
     max-height: 84.6vh;
     overflow-y: scroll;
     border: 2px solid #000;
     background: linear-gradient(-30deg, var(--content-background-color) 2%, #FFF 98% 2%);
-=======
-    max-height: 84vh;
-    overflow-y: scroll;
->>>>>>> 63f85ebea9038e54897d47b9c78d4320da163a5f
 }
 #content h1 {
     text-align: center;
@@ -114,18 +100,14 @@ p {
 }
 #content p {
     font-style: italic;
-<<<<<<< HEAD
     text-indent: 8%;
     color: #000;
     font-style: italic;
     font-size: 90%;
-=======
->>>>>>> 63f85ebea9038e54897d47b9c78d4320da163a5f
 }
 #page {
     display: grid;
     grid-template-columns: 25% 75%;
-<<<<<<< HEAD
     background-color: var(--page-background-color);
 }
 #reforms {
@@ -165,18 +147,5 @@ p {
 .navPages p {
     color: #000;
     text-transform: uppercase;
-=======
-    
-}
-#reforms {
-    display: flex;
-}
-#reforms div{
-    padding: 10px;
-
-}
-#reforms div:hover{
-    color: antiquewhite;
->>>>>>> 63f85ebea9038e54897d47b9c78d4320da163a5f
 }
 
