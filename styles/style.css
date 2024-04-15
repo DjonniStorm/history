@@ -104,6 +104,7 @@ main .content {
 .mainImg h3 {
     font-size: 33px;
     margin-bottom: 2px;
+    user-select: none;
 }
 .mainImg h4 {
     font-size: 16px;
@@ -247,6 +248,7 @@ main .content {
     display: flex;
     overflow-y: scroll;
     overflow-y: auto;
+    user-select: none;
 }
 .timeline p {
     color: black;
